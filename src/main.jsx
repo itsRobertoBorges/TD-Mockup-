@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Navbar from './components/Navbar.jsx'
 import MainGraphic from './components/MainGraphic.jsx'
 import ServicesGraphic from './components/ServicesGraphic.jsx'
+import CreditCardGraphic from './components/CreditCardGraphic.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,5 +13,6 @@ createRoot(document.getElementById('root')).render(
     <Navbar />
     <MainGraphic />
     <ServicesGraphic />
+    <CreditCardGraphic />
   </StrictMode>,
 )

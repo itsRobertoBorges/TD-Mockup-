@@ -13,16 +13,8 @@ return (
             role="img"
             aria-label="Services graphic"
         >
-            <title>Services graphic</title>
 
             <rect x="0" y="0" width="800" height="400" fill="#007a3d" />
-
-                <img
-                src={servicesGraphicImg2}
-                style={{ maxWidth: "100%", height: "100%", display: "block" }}
-                width={500}
-                alt="Service graphic"
-            />
 
             <g transform="translate(0, 20)">
                 <g fill="#ffffff">
@@ -87,14 +79,16 @@ return (
             {/* servicesGraphicImg2 placed first so it appears to the left */}
             <img
                 src={servicesGraphicImg2}
-                style={{ maxWidth: "100%", height: "100%", display: "block" }}
+                className='fade-in'
+                style={{ maxWidth: "100%", height: "50vh", display: "block" }}
                 width={500}
                 alt="Service graphic 2"
             />
 
             <img
                 src={servicesGraphicImg}
-                style={{ maxWidth: "100%", height: "100%", display: "block" }}
+                className='fade-in'
+                style={{ maxWidth: "100%", height: "50vh", display: "block" }}
                 width={500}
                 alt="Service graphic"
             />

@@ -8,7 +8,7 @@ export default function Navbar() {
                     <div className="td-navbar__brand" aria-hidden="true">TD Mockup</div>
                     <ul className="td-navbar__links">
                         <li><a href="#">Personal</a></li>
-                        <li><a href="#">Small Business</a></li>
+                        <li><a href="#">Credit Cards</a></li>
                         <li><a href="#">Investing</a></li>
                         <li><a href="#">Support</a></li>
                     </ul>
