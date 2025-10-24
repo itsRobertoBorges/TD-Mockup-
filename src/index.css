@@ -102,3 +102,7 @@ button:focus-visible {
 .btn-animation:active > .label {
   transform: translateY(0) scale(1.97);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in { animation: none !important; opacity: 1 !important; }
+}
