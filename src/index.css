@@ -76,3 +76,29 @@ button:focus-visible {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* text-focused hover animation
+  - wrap button text in a span.label for best results:
+    <button class="btn-animation"><span class="label">Text</span></button>
+*/
+.btn-animation,
+.btn-animation > .label,
+.btn-animation .label {
+  display: inline-block;
+  transition: transform 0.28s cubic-bezier(.2,.9,.2,1), color 0.18s ease;
+  transform-origin: center;
+  will-change: transform, color;
+}
+
+.btn-animation:hover,
+.btn-animation:focus-visible,
+.btn-animation:hover > .label,
+.btn-animation:focus-visible > .label {
+  transform: translateY(-3px) scale(1.06);
+  color: #0a8a0a;
+}
+
+.btn-animation:active,
+.btn-animation:active > .label {
+  transform: translateY(0) scale(1.97);
+}
