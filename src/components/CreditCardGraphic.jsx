@@ -4,7 +4,7 @@ import "/src/index.css";
 
 const CreditCardGraphic = ({ style = {}, ...props }) => {
     return (
-        <div
+        <div id="credit-card-graphic"
             style={{
                 backgroundColor: "#ffffff",
                 width: "100vw",

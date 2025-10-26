@@ -1,15 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-//import './App.css'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar.jsx";
+import MainGraphic from "./components/MainGraphic.jsx";
+import ServicesGraphic from "./components/ServicesGraphic.jsx";
+import CreditCardGraphic from "./components/CreditCardGraphic.jsx";
+import SupportGraphic from "./components/SupportGraphic.jsx";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-    </>
-  )
-}
+      <Navbar />
 
-export default App
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              {/* <MainGraphic />
+              <ServicesGraphic />
+              <CreditCardGraphic />
+              <SupportGraphic /> */}
+            </>
+          }
+        />
+        <Route path="/main-graphic" element={<MainGraphic />} />
+        <Route path="/credit-card" element={<CreditCardGraphic />} />
+        <Route path="/services-graphic" element={<ServicesGraphic />} />
+        <Route path="/support-graphic" element={<SupportGraphic />} />
+      </Routes>
+    </>
+  );
+}

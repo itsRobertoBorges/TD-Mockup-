@@ -13,7 +13,7 @@ const MainGraphic = ({
 
     return (
 
-        <div
+        <div id='main-graphic'
             className={className}
             style={{
                 width,
