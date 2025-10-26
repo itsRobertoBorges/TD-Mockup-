@@ -9,6 +9,7 @@ export default function ServicesGraphic({ className = "", style = {} }) {
 
     return (
         <section
+            id="services-graphic"
             className={className}
             aria-labelledby="services-heading"
             style={{
@@ -23,7 +24,6 @@ export default function ServicesGraphic({ className = "", style = {} }) {
 
             {/* Headline + sub + CTA (HTML for better wrapping and responsiveness) */}
             <div
-                id="services-graphic"
                 className="fade-in"
                 style={{
                     maxWidth: 1200,
