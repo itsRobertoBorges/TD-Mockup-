@@ -65,9 +65,16 @@ export default function OpenAccountModal({ open, onClose }) {
           </button>
         </div>
 
-        <div style={{ padding: 20, color: "#222" }}>
+        <div style={{ padding: 20, color: "#f4f4f4" }}>
           <p style={{ margin: 0 }}>
-            Modal is open. (add Name / Email / Password next.)
+            <input className="registry-text-field" type="email" placeholder="Email address" style={{ background: "#fff", color: "#fff", width: "100%", padding: 10, fontSize: 16, marginBottom: 12, boxSizing: "border-box" }} />
+            <input type="full name" placeholder="Full Name" style={{ background: "#fff", width: "100%", padding: 10, fontSize: 16, marginBottom: 12, boxSizing: "border-box" }} />
+            <input type="password" placeholder="Create a Password" style={{ background: "#fff", width: "100%", padding: 10, fontSize: 16, marginBottom: 20, boxSizing: "border-box" }} />
+            <button type="submit" style={{ width: "100%", padding: 12, fontSize: 16, background: brand, color: "#fff", border: 0, borderRadius: 8, cursor: "pointer" }}>
+              Create Account
+            </button>
+          
+                
           </p>
         </div>
       </div>
