@@ -106,3 +106,31 @@ button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .fade-in { animation: none !important; opacity: 1 !important; }
 }
+
+@media (max-width: 768px) {
+  #credit-card-graphic {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #credit-card-graphic p {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+
+  #credit-card-graphic iframe {
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  @media (max-width: 900px) {
+  #main-graphic {
+    flex-direction: column;
+  }
+  #main-graphic .fade-in {
+    /* if you want slightly smaller text on narrow screens */
+    font-size: clamp(1.1rem, 5vw, 2rem);
+  }
+}
+}
