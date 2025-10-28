@@ -2,6 +2,22 @@ import React from "react";
 
 const brand = "#007a3d"; // TD green
 
+function openEmail() {
+  const to = "support@yourbankmock.ca";
+  const subject = encodeURIComponent("Support Request – TD Mock");
+  const body = encodeURIComponent(
+    `Hi Support,
+
+I need help with:
+
+• 
+• 
+
+Browser: ${navigator.userAgent}
+`
+  );
+  window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+}
 
 const SupportGraphic = ({
   className = "",
@@ -141,6 +157,23 @@ const SupportGraphic = ({
             />
           </svg>
           Live support • average response under 2 minutes
+          
+            <button
+                onClick={openEmail}
+                className="td-btn td-btn--ghost"
+                style={{
+                backgroundColor: brand,
+                color: "#fff",
+                border: "none",
+                padding: "10px 14px",
+                borderRadius: 8,
+                cursor: "pointer",
+                fontWeight: 600
+                }}
+            >
+                Contact Us
+            </button> 
+           
         </div>
       </div>
 

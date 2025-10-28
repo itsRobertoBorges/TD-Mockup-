@@ -12,14 +12,15 @@ import OpenAccountModal from './components/OpenAccountModal.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    
     <App />
-    <Navbar />
+    {/* <Navbar />
     <MainGraphic />
     <ServicesGraphic />
     <CreditCardGraphic />
     <SupportGraphic />
-    </BrowserRouter >
+    <OpenAccountModal /> */}
+    
   </StrictMode>
  
 )
