@@ -1,27 +1,67 @@
-TD Mock App — README
+# 🏦 TD Mock App
 
-A small TD Bank–style mock web app built for portfolio/demo purposes. This project showcases front-end skills (component architecture, UI polish, state handling) and clean deployment to GitHub Pages.
+A **TD Bank–inspired full-stack demo application** built for portfolio and educational purposes.  
+This project demonstrates modern **React front-end development**, a **Spring Boot + MongoDB backend**, and clean, production-style deployment practices.
 
-Disclaimer: This project is not affiliated with TD Bank. It’s an educational demo only.
+> ⚠️ **Disclaimer:** This project is **not affiliated with TD Bank**.  
+> It is a mock application created for learning and portfolio demonstration only.
 
-✨ Features
+---
 
-Landing + Hero section with brand-inspired styling (#007a3d).
+## ✨ Features
 
-Support / Contact CTA (mailto) with prefilled subject/body.
+- 💻 **Modern React Frontend**
+  - Landing page and hero section styled with TD brand-inspired green (`#007a3d`)
+  - “Open an Account” modal with client-side validation and API integration
+  - Responsive, accessible layout with focus handling and keyboard navigation  
+  - Email + Name + Password registration flow connected to backend
 
-Responsive layout and accessible semantics (headings, labels, focus states).
+- ⚙️ **Spring Boot Backend**
+  - RESTful API endpoints (`/api/auth/register`, `/api/auth/login`)
+  - User data stored securely in **MongoDB Atlas**
+  - Password hashing via **BCrypt**
+  - Centralized error handling (`ApiExceptionHandler.java`)
+  - CORS & Security configuration for safe local development
 
-Simple componentized structure (e.g., HeroSection, MainGraphic, SupportGraphic).
+- 🧠 **MongoDB Integration**
+  - Persistent user collection (`app_users`)
+  - Indexed unique email field
+  - Connected via environment variable or application properties
 
-Deployed via GitHub Pages.
+- 🚀 **Dev Experience**
+  - Runs both frontend (`Vite`) and backend (`Spring Boot`) concurrently  
+  - Hot reload for frontend, auto-rebuild for backend
+  - Proxy or CORS-enabled communication between ports 5173 ↔ 8080
+  - Clean Gradle build for backend, npm scripts for frontend
 
-🧰 Tech Stack
+---
 
-React (Vite)
+## 🧰 Tech Stack
 
-JavaScript / JSX
+**Frontend:**  
+- React (Vite)  
+- JavaScript / JSX  
+- CSS / Tailwind (optional)
 
-CSS (optionally Tailwind if enabled)
+**Backend:**  
+- Java 17+ (Spring Boot 3)  
+- Spring Web, Spring Security, Spring Data MongoDB  
+- Gradle build system  
 
-gh-pages (for deployment)
+**Database:**  
+- MongoDB Atlas (Cloud Database)
+
+**Deployment:**  
+- GitHub Pages (frontend)  
+- Local or cloud Spring Boot runtime (backend)
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone and install dependencies
+```bash
+git clone https://github.com/itsRobertoBorges/TD-Mock-App.git
+cd TD-Mock-App/frontend
+npm install
+
